@@ -12,9 +12,10 @@ class Node extends Base {
   /**
    * {@inheritdoc}
    */
-  public function init(array &$variables) {
-    parent::init($variables);
+  public function process(array &$variables) {
+    parent::process($variables);
 
+    return $this;
   }
 
 }
